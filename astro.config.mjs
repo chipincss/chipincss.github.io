@@ -19,6 +19,28 @@ export default defineConfig({
 				baseUrl: "https://github.com/chipincss/chipincss.github.io/edit/main/"
 			},
 			sidebar: [
+				{
+					label: 'Getting started',
+					items: [
+						{
+							label: 'Installation',
+							slug: 'getting-started/installation'
+						},
+					]
+				},
+				{
+					label: 'Components',
+					items: [
+						{
+							label: 'Alerts',
+							slug: 'components/alerts'
+						},
+						{
+							label: 'Dialogs',
+							slug: 'components/dialogs'
+						}
+					]
+				}
 			],
 		}),
 	],

@@ -1,0 +1,72 @@
+---
+title: Installation
+description: Installing the framework to your website
+---
+import { LinkButton } from '@astrojs/starlight/components';
+
+To install the framework and use it on your website, please follow these steps below.
+
+## Downloading the CSS file
+As you know, all of the styles are already compiled for you and they are located in the dist folder of our documentation repository. To download it, click the download button below and you will have all of the required files ready for you!
+
+<LinkButton href="https://github.com/chipincss/chipincss.github.io/blob/main/src/dist/compiled.zip">Download it!</LinkButton>
+
+Included in this archive are the following:
+- The framework itself in a CSS file
+- The needed scripts for some of it's components
+- Some additional scripts such as jQuery and PopperJS, if needed
+
+Once you have the archive downloaded, you can now add it to your website!
+
+## Adding the framework
+You should already have your HTML files prepared before adding the framework. For starters, here's a HTML template that you can use as a quick start!
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hello world!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main style="flex-grow: 1;">
+<h1>Hello world!</h1>
+</main>
+</body>
+</html>
+```
+
+For adding the CSS stylesheet, the most recommended way of doing that is by adding it to the head tag area. Here's what it should look like.
+
+```html
+<link href="/chipincss.css" rel="stylesheet">
+```
+
+For adding the Javascript bundle file, you should add it to end of the body tag. This is so that we can use the functions without any errors from occurring! Here's what it should look like.
+
+```html
+<script src="/chipincss.js"></script>
+```
+
+With all of this in place, here's what the HTML file should look like now.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hello world!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/chipincss.css" rel="stylesheet">
+</head>
+<body>
+<main style="flex-grow: 1;">
+<h1>Hello world!</h1>
+</main>
+<script src="/chipincss.js"></script>
+</body>
+</html>
+```
+
+Once done, you're ready to add your components! See the components category on the sidebar to see what we have to offer with Chipincss!
